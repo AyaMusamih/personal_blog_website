@@ -1,0 +1,71 @@
+@import url(./style.css);
+@import url(./Responsiveness.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: 50px 1fr 100px;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: calc(100% - 200px);
+    margin: auto;
+}
+
+.header .container {
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.main {
+    grid-row: 2;
+}
+
+.posts .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .container {
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
